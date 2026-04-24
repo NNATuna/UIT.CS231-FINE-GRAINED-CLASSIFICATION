@@ -14,36 +14,54 @@
 
 ---
 
+## 📖 Mục lục
+- [Thông tin môn học](#-thông-tin-môn-học)
+- [Giới thiệu Đồ án](#-giới-thiệu-đồ-án)
+- [Thông tin thành viên](#-thành-viên)
+- [Nhiệm vụ chính](#️-nhiệm-vụ-chính)
+
+---
+---
+## 📚 Thông tin môn học
+- **Tên môn học:** Nhập môn Thị giác Máy tính (CS231)
+- **Mã môn học:** CS231 - Lớp: CS231.Q23
+- **Năm học:** 2025 - 2026
+- **Giảng viên:** TS. Mai Tiến Dũng
+- Môn học được giảng dạy tại Trường Đại học Công nghệ Thông tin - Đại học Quốc gia Thành phố Hồ Chí Minh
 ## 📝 Giới thiệu Đồ án
 
-Dự án tập trung vào bài toán **Fine-Grained Visual Categorization (FGVC)** - phân loại chi tiết 150 loài chim trên tập dữ liệu Birds-525. Áp dụng và so sánh nhiều phương pháp từ truyền thống đến các kiến trúc SOTA (State-of-the-Art) như **Bilinear CNN (B-CNN)**, **Vision Transformer (ViT)** và **CLIP** để tìm ra giải pháp tối ưu cho việc nhận diện các đặc trưng nhỏ giữa các loài chim có độ tương đồng cao.
+Dự án tập trung vào bài toán **Fine-Grained Visual Categorization (FGVC)** - phân loại chi tiết 150 loài chim trên tập dữ liệu Birds-525. Áp dụng và so sánh nhiều phương pháp từ truyền thống đến các kiến trúc SOTA (State-of-the-Art) như **VGG16**, **Bilinear CNN (B-CNN)**, **Vision Transformer (ViT)** và **Contrastive Language-Image Pre-training (CLIP)** để tìm ra giải pháp tối ưu cho việc nhận diện các đặc trưng nhỏ giữa các loài chim có độ tương đồng cao.
 
 ---
 
 ## 👥 Thành viên
-
-| Thành viên   | Vai trò                     | Nhiệm vụ trọng tâm                                                    |
-| :----------- | :-------------------------- | :-------------------------------------------------------------------- |
-| **Member 1** | Kỹ sư Tiền xử lý & Baseline | Data Augmentation, HOG, VGG16 + Random Forest Baseline.               |
-| **Member 2** | Đánh giá & SOTA             | Vision Transformer (ViT), Color Histogram, Evaluation Metrics.        |
-| **Member 3** | CNN & End-to-End            | **Custom Bilinear CNN (B-CNN)**, EfficientNetV2, End-to-End Training. |
-| **Member 4** | Ứng dụng & CLIP             | OpenAI-CLIP (Zero-shot), LBP Features, Gradio/Streamlit App.          |
+| **Student ID** | **Member**          | **Email**                    |
+|----------------|---------------------|------------------------------|
+| 24520101       | Nguyen Duy Hoàng Anh     | 24520101@gm.uit.edu.vn       |
+| 24520034       | Nguyễn Ngọc Anh Tuấn       | 24520034@gm.uit.edu.vn       |
+| 24520704       | Trần Nguyễn Lâm Huy       | 24520704@gm.uit.edu.vn       |
+| 24521796       | Nguyễn Bá Toàn       | 24521796@gm.uit.edu.vn       |
 
 ---
 
-## 🏗️ Cấu trúc thư mục dự án
+---
 
-Hệ thống được tổ chức dạng Modular Notebooks để tối ưu trên môi trường Cloud (Colab/Kaggle):
+## 🏗️ Nhiệm vụ chính
 
-```text
-CS231-FINE-GRAINED-CLASSIFICATION/
-├── notebooks/
-│   ├── Member_1/           # Preprocessing & Baseline (VGG16)
-│   ├── Member_2/           # Transformer (ViT) & Metrics
-│   ├── Member_3/           # Modern CNN (B-CNN, EfficientNetV2)
-│   └── Member_4/           # CLIP & Demo Application
-├── results/                # Biểu đồ Accuracy/Loss & Confusion Matrix
-├── docs/                   # File Báo cáo (PDF) & Slide thuyết trình
-├── .gitignore              # Chặn dataset & weights nặng
-└── README.md               # Tài liệu hướng dẫn chính
-```
+Cài đặt và triển các thuật toán Thị giác Máy tính như:
+- Xử lý và tăng cường dữ liệu.
+- VGG16
+- CLIP (Contrastive Language-Image Pre-training)
+- ViT (Vision Transformer)
+- Custom Bilinear CNN (B-CNN)
+- Huấn luyện và đánh giá mô hình.
+- Xây dựng demo với từng loại mô hình
+
+## 💻 Cấu trúc thư mục dự án
+- `./docs/`: Lưu trữ tài liệu báo cáo và slide trình bày
+
+- `./demo/`: Chương trình demo dùng để chạy thử mô hình dự đoán loài chim
+
+- `./models/`: Lưu trữ các mô hình đã huấn luyện và trọng số (weights)
+
+- `./notebooks/`: Các notebook Jupyter phục vụ phân tích và thử nghiệm
