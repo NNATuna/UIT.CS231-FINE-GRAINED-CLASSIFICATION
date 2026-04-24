@@ -6,7 +6,8 @@ nhau.
 - **Mô hình phân loại:** Huấn luyện Random Forest (dư thgian thì làm thêm SVM) để phân loại dựa trên vector của ViT và Color Histogram.
 
 HƯỚNG DẪN:
-Download 2 file .pkl tại link đây: + xxxxxxxxxxx (Chờ mai tao úp, hết 4g rồi :)))), 
-                                   + Cách 2: chạy file .ipynb trên kaggle để tải 2 file .pkl xuống
-*Lưu ý: di chuyển 2 file đó cùng vị trí với file app_final.py và label_map.json
+Download 2 file .pkl tại link đây:
+- xxxxxxxxxxx (Chờ mai tao úp, hết 4g rồi :)))), 
+- Cách 2: chạy file .ipynb trên kaggle để tải 2 file .pkl xuống
+- *Lưu ý: di chuyển 2 file đó cùng vị trí với file app_final.py và label_map.json
 CÁCH CHẠY app_final.py: python app_final.py
