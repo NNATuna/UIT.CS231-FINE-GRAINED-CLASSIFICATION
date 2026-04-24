@@ -3,4 +3,4 @@ nhau.
 - Trích xuất đặc trưng truyền thống: Cài đặt Color Histogram (trích xuất phân bố màu sắc lông chim).
 - Trích xuất đặc trưng Học sâu: Cài đặt Vision Transformer (ViT-B/16) để trích xuất vector embedding
 768 chiều.
-- **Mô hình phân loại:** Huân luyện Random Forest (dư thgian thì làm thêm SVM) để phân loại dựa trên vector của ViT và Color Histogram.
+- **Mô hình phân loại:** Huấn luyện Random Forest (dư thgian thì làm thêm SVM) để phân loại dựa trên vector của ViT và Color Histogram.
