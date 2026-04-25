@@ -1,7 +1,5 @@
-- **Công việc chung (Data Augmentation):** Thực hiện Data Augmentation trên tập Birds-525 (cân bằng
-  150 lớp bằng các phép xoay, lật, phóng to...). Xây dựng pipeline dữ liệu chuẩn để cả nhóm dùng chung.
-- **Trích xuất đặc trưng Học sâu:** Cài đặt VGG16 để rút trích vector đặc
-  trưng.
-- **Mô hình phân loại:** Sử dụng lớp fully connected cho cả đặc
-  trưng VGG16
+- **Công việc chung (Data Augmentation):** Thực hiện tăng cường dữ liệu cho tập Birds-525 nhằm cân bằng dữ liệu giữa 150 lớp bằng các phép xoay, lật, thay đổi độ sáng,... Đồng thời xây dựng pipeline dữ liệu chuẩn để cả nhóm sử dụng chung.
 
+- **Xây dựng backbone trích xuất đặc trưng:** Cài đặt mô hình VGG16 pretrained trên ImageNet để trích xuất đặc trưng từ ảnh chim.
+
+- **Xây dựng mô hình phân loại:** Kết hợp backbone VGG16 với classifier head gồm GlobalAveragePooling2D, Dropout và Dense Softmax để thực hiện phân loại loài chim.
