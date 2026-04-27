@@ -19,7 +19,7 @@
 - [Giới thiệu Đồ án](#-giới-thiệu-đồ-án)
 - [Thông tin thành viên](#-thành-viên)
 - [Nhiệm vụ chính](#️-nhiệm-vụ-chính)
-- [Cấu trúc thư mục](#️-cấu trúc thư mục dự án)
+- [Cấu trúc thư mục](#️-cấu-trúc-thư-mục-dự-án)
 
 ---
 ---
