@@ -1,7 +1,3 @@
-Dưới đây là bản trình bày lại (Refined README) cho đồ án của nhóm bạn, được tối ưu hóa về mặt thẩm mỹ và làm nổi bật các công nghệ cốt lõi (SOTA) mà nhóm đã sử dụng:
-
----
-
 <p align="center">
   <a href="[https://www.uit.edu.vn/](https://www.uit.edu.vn/)" title="Trường Đại học Công nghệ Thông tin">
     <img src="[https://i.imgur.com/WmMnSRt.png](https://i.imgur.com/WmMnSRt.png)" alt="UIT Logo" width="300">
