@@ -3,3 +3,4 @@
 - **Xây dựng backbone trích xuất đặc trưng:** Cài đặt mô hình VGG16 pretrained trên ImageNet để trích xuất đặc trưng từ ảnh chim.
 
 - **Xây dựng mô hình phân loại:** Kết hợp backbone VGG16 với mô hình phân loại randomforest, tìm bộ tham số tốt nhất bằng gridsearch để thực hiện phân loại loài chim
+- **Download model qua link này:** https://drive.google.com/file/d/1-GXWKfBVcjaATouaIutrjmkgj13tMH1h/view?usp=sharing
