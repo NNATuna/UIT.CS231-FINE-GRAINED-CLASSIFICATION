@@ -26,24 +26,23 @@ Nhóm đã thực nghiệm và so sánh hiệu năng giữa các kiến trúc m�
 ## 🛠️ Phương pháp tiếp cận
 Dự án triển khai quy trình trích xuất đặc trưng (Feature Extraction) kết hợp với bộ phân loại học máy truyền thống:
 
-* **Kiến trúc Backbone:**
-    * **VGG16:** Mô hình cơ bản để thiết lập baseline.
-    * [cite_start]**EfficientNetB0:** Tối ưu hóa giữa hiệu suất và tham số. [cite: 17, 30]
-    * [cite_start]**Vision Transformer (ViT-B/16):** Khai thác cơ chế Self-attention để nắm bắt đặc trưng toàn cục. [cite: 17, 21]
-    * [cite_start]**CLIP (Visual Encoder):** Học biểu diễn hình ảnh từ không gian ngôn ngữ. [cite: 17, 26]
-    * **Bilinear CNN (B-CNN):** Chuyên biệt cho bài toán FGVC.
-* [cite_start]**Bộ phân loại:** **Random Forest** kết hợp **GridSearchCV** để tối ưu hóa siêu tham số. [cite: 17, 30]
-* [cite_start]**Xử lý dữ liệu:** Kỹ thuật **Data Augmentation** giúp cân bằng mẫu và tăng tính vững (Robustness) cho mô hình. [cite: 17, 30]
+**Kiến trúc Backbone:**
+    **VGG16:** Mô hình cơ bản để thiết lập baseline.
+    **EfficientNetB0:** Tối ưu hóa giữa hiệu suất và tham số.
+    **Vision Transformer (ViT-B/16):** Khai thác cơ chế Self-attention để nắm bắt đặc trưng toàn cục. 
+    **CLIP (Visual Encoder):** Học biểu diễn hình ảnh từ không gian ngôn ngữ. [cite: 17, 26]
+**Bộ phân loại:** **Random Forest** kết hợp **GridSearchCV** để tối ưu hóa siêu tham số. [cite: 17, 30]
+**Xử lý dữ liệu:** Kỹ thuật **Data Augmentation** giúp cân bằng mẫu và tăng tính vững (Robustness) cho mô hình.
 
 ---
 
 ## 👥 Thành viên thực hiện
 | MSSV | Họ và tên | Vai trò chính |
 | :--- | :--- | :--- |
-| **24520034** | **Nguyễn Ngọc Anh Tuấn** | [cite_start]Chia tập dữ liệu, rút trích đặc trưng EfficientNetB0 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên  [cite: 33] |
-| **24520704** | **Trần Nguyễn Lâm Huy** | [cite_start]Tăng cường dữ liệu, rút trích đặc trưng VGG16 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên VGG16 [cite: 33] |
-| **24520101** | **Nguyễn Duy Hoàng Anh** | [cite_start]Thu thập và tổng hợp dữ liệu, rút trích đặc trưng bằng CLIP, tìm tham số bằng GridSearchCV, sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên CLIP ViT-B/32 [cite: 33] |
-| **24521796** | **Nguyễn Bá Toàn** | [cite_start]Thu thập dữ liệu, rút trích đặc trưng bằng Vision Transformer và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên ViT-B/16 [cite: 33] |
+| **24520034** | **Nguyễn Ngọc Anh Tuấn** | Chia tập dữ liệu, rút trích đặc trưng EfficientNetB0 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên |
+| **24520704** | **Trần Nguyễn Lâm Huy** | Tăng cường dữ liệu, rút trích đặc trưng VGG16 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên VGG16 |
+| **24520101** | **Nguyễn Duy Hoàng Anh** | Thu thập và tổng hợp dữ liệu, rút trích đặc trưng bằng CLIP, tìm tham số bằng GridSearchCV, sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên CLIP ViT-B/32 |
+| **24521796** | **Nguyễn Bá Toàn** | Thu thập dữ liệu, rút trích đặc trưng bằng Vision Transformer và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên ViT-B/16 |
 
 ---
 
@@ -57,9 +56,8 @@ Dự án triển khai quy trình trích xuất đặc trưng (Feature Extraction
 ---
 
 ## 🎓 Thông tin môn học
-* [cite_start]**Môn học:** Nhập môn Thị giác Máy tính (CS231.Q23) [cite: 6, 11]
-* **Giảng viên hướng dẫn:** TS. [cite_start]Mai Tiến Dũng [cite: 6]
-* [cite_start]**Đơn vị:** Khoa Khoa học Máy tính - Trường Đại học Công nghệ Thông tin (VNU-HCM). [cite: 2, 3]
+**Môn học:** Nhập môn Thị giác Máy tính (CS231.Q23) 
+**Đơn vị:** Khoa Khoa học Máy tính - Trường Đại học Công nghệ Thông tin (VNU-HCM).
 
 ---
-[cite_start]*Dự án đạt độ chính xác xấp xỉ **96%** với phương pháp ViT-B/16 kết hợp Random Forest trên tập kiểm tra.* [cite: 21, 675]
+*Dự án đạt độ chính xác xấp xỉ **96%** với phương pháp ViT-B/16 kết hợp Random Forest trên tập kiểm tra.*
