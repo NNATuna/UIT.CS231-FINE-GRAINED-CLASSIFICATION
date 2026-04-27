@@ -19,7 +19,7 @@
 - [Giới thiệu Đồ án](#-giới-thiệu-đồ-án)
 - [Thông tin thành viên](#-thành-viên)
 - [Nhiệm vụ chính](#️-nhiệm-vụ-chính)
-- [Cấu trúc thư mục](#️-cấu-trúc-thư-mục-dự-án)
+- [Cấu trúc đồ án](#️-cấu-trúc-đồ-án)
 
 ---
 ---
@@ -61,7 +61,9 @@ Cài đặt và triển các thuật toán Thị giác Máy tính như:
 - Đánh giá mô hình qua các phương pháp rút trích đặc trưng.
 - Xây dựng demo với từng loại mô hình
 
-## 💻 Cấu trúc thư mục dự án
+## 💻 Cấu trúc đồ án
 - `./docs/`: Lưu trữ tài liệu báo cáo và slide trình bày
 
 - `./notebooks/`: Các notebook Jupyter phục vụ phân tích và thử nghiệm
+
+- `DATASET.md':  Bộ dữ liệu 150 loài chim đã được tăng cương và chưa được tăng cường.
