@@ -27,11 +27,11 @@ Nhóm đã thực nghiệm và so sánh hiệu năng giữa các kiến trúc m�
 Dự án triển khai quy trình trích xuất đặc trưng (Feature Extraction) kết hợp với bộ phân loại học máy truyền thống:
 
 **Kiến trúc Backbone:**
-    **VGG16:** Mô hình cơ bản để thiết lập baseline.
-    **EfficientNetB0:** Tối ưu hóa giữa hiệu suất và tham số.
-    **Vision Transformer (ViT-B/16):** Khai thác cơ chế Self-attention để nắm bắt đặc trưng toàn cục. 
-    **CLIP (Visual Encoder):** Học biểu diễn hình ảnh từ không gian ngôn ngữ. [cite: 17, 26]
-**Bộ phân loại:** **Random Forest** kết hợp **GridSearchCV** để tối ưu hóa siêu tham số. [cite: 17, 30]
+  - **VGG16:** Mô hình cơ bản để thiết lập baseline.
+  - **EfficientNetB0:** Tối ưu hóa giữa hiệu suất và tham số.
+  - **Vision Transformer (ViT-B/16):** Khai thác cơ chế Self-attention để nắm bắt đặc trưng toàn cục. 
+  - **CLIP (Visual Encoder):** Học biểu diễn hình ảnh từ không gian ngôn ngữ. 
+**Bộ phân loại:** **Random Forest** kết hợp **GridSearchCV** để tối ưu hóa siêu tham số. 
 **Xử lý dữ liệu:** Kỹ thuật **Data Augmentation** giúp cân bằng mẫu và tăng tính vững (Robustness) cho mô hình.
 
 ---
