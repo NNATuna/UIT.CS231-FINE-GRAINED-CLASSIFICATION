@@ -19,6 +19,7 @@
 - [Giới thiệu Đồ án](#-giới-thiệu-đồ-án)
 - [Thông tin thành viên](#-thành-viên)
 - [Nhiệm vụ chính](#️-nhiệm-vụ-chính)
+- [Cấu trúc thư mục](#️-cấu trúc thư mục dự án)
 
 ---
 ---
@@ -50,18 +51,17 @@ Dự án tập trung vào bài toán **Fine-Grained Visual Categorization (FGVC)
 
 Cài đặt và triển các thuật toán Thị giác Máy tính như:
 - Xử lý và tăng cường dữ liệu.
-- VGG16
-- CLIP (Contrastive Language-Image Pre-training)
-- ViT (Vision Transformer)
-- Custom Bilinear CNN (B-CNN)
-- Huấn luyện và đánh giá mô hình.
+- Rút trích đặc trưng (feature extract) qua các mô hình:
+  - VGG16
+  - CLIP (Contrastive Language-Image Pre-training)
+  - ViT (Vision Transformer)
+  - Custom Bilinear CNN (B-CNN)
+- Tìm tham số tối ưu bằng GridSearchCV
+- Sử dụng mô hình phân loại Random Forest để huấn luyện mô hình
+- Đánh giá mô hình qua các phương pháp rút trích đặc trưng.
 - Xây dựng demo với từng loại mô hình
 
 ## 💻 Cấu trúc thư mục dự án
 - `./docs/`: Lưu trữ tài liệu báo cáo và slide trình bày
-
-- `./demo/`: Chương trình demo dùng để chạy thử mô hình dự đoán loài chim
-
-- `./models/`: Lưu trữ các mô hình đã huấn luyện và trọng số (weights)
 
 - `./notebooks/`: Các notebook Jupyter phục vụ phân tích và thử nghiệm
