@@ -1,69 +1,68 @@
+Dưới đây là bản trình bày lại (Refined README) cho đồ án của nhóm bạn, được tối ưu hóa về mặt thẩm mỹ và làm nổi bật các công nghệ cốt lõi (SOTA) mà nhóm đã sử dụng:
+
+---
+
 <p align="center">
-  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: none;">
-    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology" width="300">
+  <a href="[https://www.uit.edu.vn/](https://www.uit.edu.vn/)" title="Trường Đại học Công nghệ Thông tin">
+    <img src="[https://i.imgur.com/WmMnSRt.png](https://i.imgur.com/WmMnSRt.png)" alt="UIT Logo" width="300">
   </a>
 </p>
 
-<h1 align="center">CS231 - Computer Vision</h1>
+<h1 align="center">CS231 - COMPUTER VISION</h1>
+<h3 align="center">Đồ án: Phân loại chi tiết loài chim (Fine-Grained Visual Categorization)</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/University-UIT-blueviolet" alt="UIT">
-  <img src="https://img.shields.io/badge/Semester-2%202025--2026-green" alt="Semester">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+  <img src="[https://img.shields.io/badge/University-UIT-blueviolet?style=for-the-badge](https://img.shields.io/badge/University-UIT-blueviolet?style=for-the-badge)" alt="UIT">
+  <img src="[https://img.shields.io/badge/Semester-2%202025--2026-green?style=for-the-badge](https://img.shields.io/badge/Semester-2%202025--2026-green?style=for-the-badge)" alt="Semester">
+  <img src="[https://img.shields.io/badge/Status-Completed-success?style=for-the-badge](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)" alt="Status">
 </p>
 
 ---
 
-## 📖 Mục lục
-- [Thông tin môn học](#-thông-tin-môn-học)
-- [Giới thiệu Đồ án](#-giới-thiệu-đồ-án)
-- [Thông tin thành viên](#-thành-viên)
-- [Nhiệm vụ chính](#️-nhiệm-vụ-chính)
-- [Cấu trúc đồ án](#️-cấu-trúc-đồ-án)
+## 📌 Tổng quan Đồ án
+Dự án giải quyết bài toán **Fine-Grained Visual Categorization (FGVC)** trên tập dữ liệu **Birds-525**. Mục tiêu trọng tâm là phân biệt 150 loài chim có độ tương đồng cao về hình thái, nơi các đặc trưng nhỏ như mỏ, vân lông hay hình dạng chân đóng vai trò quyết định.
 
----
----
-## 📚 Thông tin môn học
-- **Tên môn học:** Nhập môn Thị giác Máy tính (CS231)
-- **Mã môn học:** CS231 - Lớp: CS231.Q23
-- **Năm học:** 2025 - 2026
-- **Giảng viên:** TS. Mai Tiến Dũng
-- Môn học được giảng dạy tại Trường Đại học Công nghệ Thông tin - Đại học Quốc gia Thành phố Hồ Chí Minh
-## 📝 Giới thiệu Đồ án
-
-Dự án tập trung vào bài toán **Fine-Grained Visual Categorization (FGVC)** - phân loại chi tiết 150 loài chim trên tập dữ liệu Birds-525. Áp dụng và so sánh nhiều phương pháp từ truyền thống đến các kiến trúc SOTA (State-of-the-Art) như **VGG16**, **Bilinear CNN (B-CNN)**, **Vision Transformer (ViT)** và **Contrastive Language-Image Pre-training (CLIP)** để tìm ra giải pháp tối ưu cho việc nhận diện các đặc trưng nhỏ giữa các loài chim có độ tương đồng cao.
+Nhóm đã thực nghiệm và so sánh hiệu năng giữa các kiến trúc mạng nơ-ron tích chập (CNN) truyền thống và các mô hình dựa trên Transformer hiện đại để tìm ra sự cân bằng giữa độ chính xác và tài nguyên tính toán.
 
 ---
 
-## 👥 Thành viên
-| **Student ID** | **Member**          | **Email**                    |
-|----------------|---------------------|------------------------------|
-| 24520101       | Nguyen Duy Hoàng Anh     | 24520101@gm.uit.edu.vn       |
-| 24520034       | Nguyễn Ngọc Anh Tuấn       | 24520034@gm.uit.edu.vn       |
-| 24520704       | Trần Nguyễn Lâm Huy       | 24520704@gm.uit.edu.vn       |
-| 24521796       | Nguyễn Bá Toàn       | 24521796@gm.uit.edu.vn       |
+## 🛠️ Phương pháp tiếp cận
+Dự án triển khai quy trình trích xuất đặc trưng (Feature Extraction) kết hợp với bộ phân loại học máy truyền thống:
+
+* **Kiến trúc Backbone:**
+    * **VGG16:** Mô hình cơ bản để thiết lập baseline.
+    * [cite_start]**EfficientNetB0:** Tối ưu hóa giữa hiệu suất và tham số. [cite: 17, 30]
+    * [cite_start]**Vision Transformer (ViT-B/16):** Khai thác cơ chế Self-attention để nắm bắt đặc trưng toàn cục. [cite: 17, 21]
+    * [cite_start]**CLIP (Visual Encoder):** Học biểu diễn hình ảnh từ không gian ngôn ngữ. [cite: 17, 26]
+    * **Bilinear CNN (B-CNN):** Chuyên biệt cho bài toán FGVC.
+* [cite_start]**Bộ phân loại:** **Random Forest** kết hợp **GridSearchCV** để tối ưu hóa siêu tham số. [cite: 17, 30]
+* [cite_start]**Xử lý dữ liệu:** Kỹ thuật **Data Augmentation** giúp cân bằng mẫu và tăng tính vững (Robustness) cho mô hình. [cite: 17, 30]
 
 ---
 
+## 👥 Thành viên thực hiện
+| MSSV | Họ và tên | Vai trò chính |
+| :--- | :--- | :--- |
+| **24520034** | **Nguyễn Ngọc Anh Tuấn** | [cite_start]Chia tập dữ liệu, rút trích đặc trưng EfficientNetB0 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên  [cite: 33] |
+| **24520704** | **Trần Nguyễn Lâm Huy** | [cite_start]Tăng cường dữ liệu, rút trích đặc trưng VGG16 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên VGG16 [cite: 33] |
+| **24520101** | **Nguyễn Duy Hoàng Anh** | [cite_start]Thu thập và tổng hợp dữ liệu, rút trích đặc trưng bằng CLIP, tìm tham số bằng GridSearchCV, sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên CLIP ViT-B/32 [cite: 33] |
+| **24521796** | **Nguyễn Bá Toàn** | [cite_start]Thu thập dữ liệu, rút trích đặc trưng bằng Vision Transformer và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên ViT-B/16 [cite: 33] |
+
 ---
 
-## 🏗️ Nhiệm vụ chính
+## 📂 Cấu trúc thư mục
+```bash
+├── docs/           # Tài liệu báo cáo (PDF), Slide thuyết trình và Hình ảnh minh họa.
+├── notebooks/      # Jupyter Notebooks thực hiện huấn luyện, GridSearch và Evaluation.
+└── README.md       # Giới thiệu dự án.
+```
 
-Cài đặt và triển các thuật toán Thị giác Máy tính như:
-- Xử lý và tăng cường dữ liệu.
-- Rút trích đặc trưng (feature extract) qua các mô hình:
-  - VGG16
-  - CLIP (Contrastive Language-Image Pre-training)
-  - ViT (Vision Transformer)
-  - Custom Bilinear CNN (B-CNN)
-- Tìm tham số tối ưu bằng GridSearchCV
-- Sử dụng mô hình phân loại Random Forest để huấn luyện mô hình
-- Đánh giá mô hình qua các phương pháp rút trích đặc trưng.
-- Xây dựng demo với từng loại mô hình
+---
 
-## 💻 Cấu trúc đồ án
-- `./docs/`: Lưu trữ tài liệu báo cáo và slide trình bày
+## 🎓 Thông tin môn học
+* [cite_start]**Môn học:** Nhập môn Thị giác Máy tính (CS231.Q23) [cite: 6, 11]
+* **Giảng viên hướng dẫn:** TS. [cite_start]Mai Tiến Dũng [cite: 6]
+* [cite_start]**Đơn vị:** Khoa Khoa học Máy tính - Trường Đại học Công nghệ Thông tin (VNU-HCM). [cite: 2, 3]
 
-- `./notebooks/`: Các notebook Jupyter phục vụ phân tích và thử nghiệm
-
-- `DATASET.md':  Bộ dữ liệu 150 loài chim đã được tăng cương và chưa được tăng cường.
+---
+[cite_start]*Dự án đạt độ chính xác xấp xỉ **96%** với phương pháp ViT-B/16 kết hợp Random Forest trên tập kiểm tra.* [cite: 21, 675]
