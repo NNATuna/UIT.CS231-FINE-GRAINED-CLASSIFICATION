@@ -1,16 +1,17 @@
 <p align="center">
-  <a href="[https://www.uit.edu.vn/](https://www.uit.edu.vn/)" title="Trường Đại học Công nghệ Thông tin">
-    <img src="[https://i.imgur.com/WmMnSRt.png](https://i.imgur.com/WmMnSRt.png)" alt="UIT Logo" width="300">
+  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: none;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology" width="300">
   </a>
 </p>
+
 
 <h1 align="center">CS231 - COMPUTER VISION</h1>
 <h3 align="center">Đồ án: Phân loại chi tiết loài chim (Fine-Grained Visual Categorization)</h3>
 
 <p align="center">
-  <img src="[https://img.shields.io/badge/University-UIT-blueviolet?style=for-the-badge](https://img.shields.io/badge/University-UIT-blueviolet?style=for-the-badge)" alt="UIT">
-  <img src="[https://img.shields.io/badge/Semester-2%202025--2026-green?style=for-the-badge](https://img.shields.io/badge/Semester-2%202025--2026-green?style=for-the-badge)" alt="Semester">
-  <img src="[https://img.shields.io/badge/Status-Completed-success?style=for-the-badge](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)" alt="Status">
+  <img src="https://img.shields.io/badge/University-UIT-blueviolet" alt="UIT">
+  <img src="https://img.shields.io/badge/Semester-2%202025--2026-green" alt="Semester">
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
 </p>
 
 ---
