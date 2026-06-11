@@ -40,8 +40,8 @@ Dự án triển khai quy trình trích xuất đặc trưng (Feature Extraction
 | Thành viên | MSSV | Họ và tên | Vai trò chính |
 | :--- | :--- | :--- | :--- |
 | **Member1** | **24520704** | **Trần Nguyễn Lâm Huy** | Tăng cường dữ liệu, rút trích đặc trưng VGG16 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên VGG16 |
-| **Member3** | **24520034** | **Nguyễn Ngọc Anh Tuấn** | Leader, chia tập dữ liệu, rút trích đặc trưng EfficientNetB0 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên |
 | **Member2** | **24521796** | **Nguyễn Bá Toàn** | Thu thập dữ liệu, rút trích đặc trưng bằng Vision Transformer và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên ViT-B/16 |
+| **Member3** | **24520034** | **Nguyễn Ngọc Anh Tuấn** | Leader, chia tập dữ liệu, rút trích đặc trưng EfficientNetB0 và sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên EfficientNetB0 |
 | **Member4** | **24520101** | **Nguyễn Duy Hoàng Anh** | Thu thập và tổng hợp dữ liệu, rút trích đặc trưng bằng CLIP, tìm tham số bằng GridSearchCV, sử dụng mô hình phân loại RandomForest.  Hoàn thành báo cáo, slide và thực hiện demo trên CLIP ViT-B/32 |
 
 ---
